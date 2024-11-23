@@ -1,22 +1,95 @@
 
+*body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color:black;
+}
+
 .appbar{
     color: #d93025;
     font-size: 20px;
-    margin: 0;
-    padding: 0;
-    border: 0;
+    margin: 25px 35px;
     vertical-align: baseline;
     text-decoration: none;
     text-align: left;
 }
 
-.findpages{
-    vertical-align: baseline;
-    text-align: left;
+.lineafterappbar{
+    border-bottom: 1px solid #ebebeb;
+}
+
+.findtittle {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    font-size: 16px;
+    min-height: 42px;
+    font-weight: 500;
+    color: #333;
+}
+
+.afterfindtittle{
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.container{
+    margin: 50px;
+    color:black; 
+}
+
+.search-options{
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: middle;
 
 }
 
-.inputgroup{
+
+.inputgroup {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+/* left row */
+.inputgroup label {
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 16%;
+    height: 42px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+    vertical-align: middle;
 
 }
+
+/* right low */
+.inputgroup input {
+
+    float: left;
+    display: inline-block;
+    min-width: 167px;
+    min-height: 41px;
+    vertical-align: middle;
+    width: 50%;
+
+}
+
 

@@ -7,47 +7,54 @@
         <title>Search</title>
         <link rel="stylesheet" href="advanced.css">
     </head>
+
     <body>
         <div class="links">
-            <nav>
                 <ul>
                     <li><a href="index.html">Google</a></li> 
-                </ul>
-            </nav>    
+                </ul>   
         </div>
 
+        <div class="appbar"> 
+            <label style="margin-left:10px">Advanced Search</label>   
+        </div>
+
+        <div class="lineafterappbar"> </div>
+
         <div class="container">
-            <div class="appbar"> 
-                <label style="margin-left:10px">Advanced Search</label>   
-            </div>
-            <div class="lineafterappbar">
-                
-            </div>
-            <form action="https://www.google.com/search" method="get">
-                
-                <span class="tittle">Find pages with...</span>
-
-                <div class="inputgroup">
-                    <label for="allwords">all these words:</label>
-                    <input type="text" name="q" id="allwords">
-                </div>
-
-                <div class="inputgroup">
-                    <label for="exactphrase">this exact phrase:</label>
-                    <input type="text" name="as_epq" id="exactphrase">
-                </div>
-
-                <div class="inputgroup">
-                    <label for="anywords">any of these words:</label>
-                    <input type="text" name="as_oq" id="anywords">
-                </div>
-
-                <div class="inputgroup">
-                    <label for="nonewords">none of these words:</label>
-                    <input type="text" name="as_eq" id="nonewords">
-                </div>
-                
     
+            <!-- <span class="findtittle">Find pages with...</span> -->
+            <!-- <div class="afterfindtittle"></div> -->
+
+            <form action="https://www.google.com/search" method="get">
+                <div class="search-options">
+                   
+                    <div class="inputgroup">
+                        <label for="allwords">all these words:</label>
+                        <input class="text-input" id="allwords" name="q" type="text" autofocus>
+                        <!-- <div>Type the important words: <span class="highlight">tri-colour rat terrier</span></div> -->
+                    </div>
+
+                    <div class="inputgroup">
+                        <label for="exactphrase">this exact phrase:</label>
+                        <input class="text-input" id="exactphrase" name="q" type="text" autofocus>
+                        <!-- <div>Put exact words in quotes: <span class="highlight">"rat terrier"</span></div> -->
+                    </div>
+
+                    <div class="inputgroup">
+                        <label for="anywords">any of these words:</label>
+                        <input class="text-input" id="anywords" name="q" type="text" autofocus>
+                        <!-- <div>Type <span class="highlight">OR</span> between words: <span class="highlight">miniature OR standard</span></div> -->
+                    </div>
+
+                    <div class="inputgroup">
+                        <label for="nonewords">none of these words:</label>
+                        <input class="text-input" id="nonewords" name="q" type="text" autofocus>
+                        <!-- <div>Put a minus sign before unwanted words: <span class="highlight">-rodent, -"Jack Russell"</span></div> -->
+                    </div>
+                </div>
+      
+
             </form>
 
         </div> 
