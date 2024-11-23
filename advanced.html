@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--control the layout on mobile browsers-->
         <meta name="author" content="Pauline Nyandusi">
         <title>Search</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="advanced.css">
     </head>
     <body>
         <div class="links">
@@ -17,12 +17,40 @@
         </div>
 
         <div class="container">
-            <form action="https://www.google.com/search">   
+            <div class="appbar"> 
+                <label style="margin-left:10px">Advanced Search</label>   
+            </div>
+            <div class="lineafterappbar">
                 
+            </div>
+            <form action="https://www.google.com/search" method="get">
+                
+                <span class="tittle">Find pages with...</span>
+
+                <div class="inputgroup">
+                    <label for="allwords">all these words:</label>
+                    <input type="text" name="q" id="allwords">
+                </div>
+
+                <div class="inputgroup">
+                    <label for="exactphrase">this exact phrase:</label>
+                    <input type="text" name="as_epq" id="exactphrase">
+                </div>
+
+                <div class="inputgroup">
+                    <label for="anywords">any of these words:</label>
+                    <input type="text" name="as_oq" id="anywords">
+                </div>
+
+                <div class="inputgroup">
+                    <label for="nonewords">none of these words:</label>
+                    <input type="text" name="as_eq" id="nonewords">
+                </div>
+                
+    
             </form>
 
-        </div>
-        
+        </div> 
     </body>
 </html>
 
