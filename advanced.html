@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"> <!--defines the character encoding for the HTML document-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--control the layout on mobile browsers-->
-        <meta name="author" content="Pauline Nyandusi">
-        <title>Search</title>
-        <link rel="stylesheet" href="advanced.css">
-    </head>
 
-    <body>
-        <div class="links">
-                <ul>
-                    <li><a href="index.html">Google</a></li> 
-                </ul>   
+<head>
+    <meta charset="UTF-8"> <!--defines the character encoding for the HTML document-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--control the layout on mobile browsers-->
+    <meta name="author" content="Pauline Nyandusi">
+    <title>Search</title>
+    <link rel="stylesheet" href="advanced.css">
+</head>
+
+<body>
+    <header class="topnav">
+        <div class="logocontainer">
+            <a href="index.html">
+                <img src="images/google logoo.png" alt="google logo" height="24" width="74">
+            </a>
         </div>
+    </header>
 
-        <div class="appbar"> 
-            <label style="margin-left:10px">Advanced Search</label>   
-        </div>
+    <div class="appbar">
+        <label style="margin-left:10px">Advanced Search</label>
+    </div>
+    <div class="lineafterappbar"> </div>
 
-        <div class="lineafterappbar"> </div>
+    <div class="container">
+        <form action="https://www.google.com/search" method="get">
+            <div class="find">
+                <span class="findtittle">Find pages with...</span>
+            </div>
+            <div class="HoCfzc">&nbsp; </div>
 
-        <div class="container">
-    
-            <!-- <span class="findtittle">Find pages with...</span> -->
-            <!-- <div class="afterfindtittle"></div> -->
-
-            <form action="https://www.google.com/search" method="get">
-                <div class="search-options">
-                   
-                    <div class="inputgroup">
-                        <label for="allwords">all these words:</label>
-                        <input class="text-input" id="allwords" name="q" type="text" autofocus>
-                        <!-- <div>Type the important words: <span class="highlight">tri-colour rat terrier</span></div> -->
-                    </div>
-
-                    <div class="inputgroup">
-                        <label for="exactphrase">this exact phrase:</label>
-                        <input class="text-input" id="exactphrase" name="q" type="text" autofocus>
-                        <!-- <div>Put exact words in quotes: <span class="highlight">"rat terrier"</span></div> -->
-                    </div>
-
-                    <div class="inputgroup">
-                        <label for="anywords">any of these words:</label>
-                        <input class="text-input" id="anywords" name="q" type="text" autofocus>
-                        <!-- <div>Type <span class="highlight">OR</span> between words: <span class="highlight">miniature OR standard</span></div> -->
-                    </div>
-
-                    <div class="inputgroup">
-                        <label for="nonewords">none of these words:</label>
-                        <input class="text-input" id="nonewords" name="q" type="text" autofocus>
-                        <!-- <div>Put a minus sign before unwanted words: <span class="highlight">-rodent, -"Jack Russell"</span></div> -->
-                    </div>
+            <div class="inputgroup">
+                <div class="leftrow">
+                    <label for="allwords">all these words:</label>
                 </div>
-      
+                <div class="rightrow">
+                    <input class="textinput" id="allwords" name="q" type="text" autofocus>
+                    <!-- <div>Type the important words: <span class="highlight">tri-colour rat terrier</span></div> -->
+                </div>
+            </div>
 
-            </form>
+            <div class="inputgroup">
+                <div class="leftrow">
+                    <label for="exactphrase">this exact word or phrase:</label>
+                </div>
+                <div class="rightrow">
+                    <input class="textinput" id="exactphrase" name="q" type="text" autofocus>
+                    <!-- <div>Put exact words in quotes: <span class="highlight">"rat terrier"</span></div> -->
+                </div>
+            </div>
 
-        </div> 
-    </body>
+            <div class="inputgroup">
+                <div class="leftrow">
+                    <label for="anywords">any of these words:</label>
+                </div>
+                <div class="rightrow">
+                    <input class="textinput" id="anywords" name="q" type="text" autofocus>
+                    <!-- <div>Type <span class="highlight">OR</span> between words: <span class="highlight">miniature OR standard</span></div> -->
+                </div>
+            </div>
+
+            <div class="inputgroup">
+                <div class="leftrow">
+                    <label for="nonewords">none of these words:</label>
+                </div>
+                <div class="rightrow">
+                    <input class="textinput" id="nonewords" name="q" type="text" autofocus>
+                    <!-- <div>Put a minus sign before unwanted words: <span class="highlight">-rodent, -"Jack Russell"</span></div> -->
+                </div>
+            </div>
+
+            <div class="button" style="text-align:right">
+                <input class="jfk-button" type="submit" value="Advanced Search" >
+            </div>
+
+
+
+        </form>
+
+    </div>
+</body>
+
 </html>
-
