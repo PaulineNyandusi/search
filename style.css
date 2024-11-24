@@ -10,11 +10,9 @@
     align-items: center;
     height: 100vh; /* Full viewport height */
 }
-
 .container {
     text-align: center;
 }
-
 #searchbar input[type="text"]{
     width: calc(632px+5px);
     width: 584px; 
@@ -29,7 +27,6 @@
     box-shadow: none;
     margin-top: 30px;
 }
-
 #button input[type="submit"]{
     margin: 11px 4px;
     padding: 0 16px;
@@ -46,8 +43,7 @@
     min-width: 54px;
     text-align: center;
     cursor: pointer;
-    user-select: none;
-     
+    user-select: none;   
 }
 #button input[type="submit"]:hover {
     background-color: #f1f3f4; /* Light gray hover effect */
@@ -55,20 +51,17 @@
 #logo{
     margin-bottom: 20px; 
 }
-
 .links nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 30px;
 }
-
 nav ul li {
     display: flex;
     position: relative;
     list-style: none;
 }
-
 nav ul li a {
     color: black;
     padding: 5px;  
@@ -77,12 +70,10 @@ nav ul li a {
     font-size: small; 
     text-align: center; 
 } 
-
 nav a {
     color: black;
     text-decoration: none;
 }
-
 nav a:hover, nav a:active {
     text-decoration: underline;   
 }

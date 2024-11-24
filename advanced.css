@@ -40,16 +40,12 @@
     font-size: 16px;
     color:#333;
     font-weight: 500;
-    float: left;
-    display: inline-block;
     min-width: 167px;
     width: 16%;
     min-height: 42px;
     vertical-align: middle;
 }
-.HoCfzc {
-    float: left;
-    display: inline-block;
+div.otByu div.HoCfzc {
     min-width: 167px;
     min-height: 41px;
     vertical-align: middle;
@@ -89,7 +85,6 @@
     font-weight: 500;
 }
 .rightrow{
-    float: left;
     display: inline-block;
     min-width: 167px;
     min-height: 41px;
