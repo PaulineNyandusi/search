@@ -55,4 +55,4 @@ Redirects users directly to the first search result, bypassing the results page.
 
 I used vs code run with live server.
 
-grind, `make valgrind`.
+
